@@ -31,7 +31,7 @@ leetcode题库网址：[https://leetcode-cn.com/](https://leetcode-cn.com/)
  * }
  */
  ```
- 解：[点击查看答案]()
+ 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode02)
 
 
 

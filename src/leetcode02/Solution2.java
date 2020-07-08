@@ -10,7 +10,7 @@ import java.awt.List;
  * @version v1.0.0 
  * @Date    2020年7月3日 下午4:05:39 
  */
-public class Solution {
+public class Solution2 {
 	//递归的方式实现
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         //链表的根节点
@@ -52,7 +52,7 @@ public class Solution {
 		l21.next = l22;
 		l2.next = l21;
 		
-		ListNode result = new Solution().addTwoNumbers(l1, l2);
+		ListNode result = new Solution2().addTwoNumbers(l1, l2);
 		while (result !=null) {
 		      System.out.println("result is "+ result.val);
 		      result = result.next;

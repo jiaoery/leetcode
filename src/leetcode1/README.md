@@ -1,6 +1,21 @@
 # 解题思路
 
-1.可以使用两次循环来实现效果
+1.可以使用两次循环来实现效果，解法效果如下
+
+```java
+public static int[] twoSum1(int[] nums, int target) {
+        for(int i = 0;i<nums.length;i++) {
+        	for(int j=i+1;j<nums.length;j++) {
+        		if(nums[i]+nums[j]==target) {
+        			return new int[] {i,j};
+        		}
+        	}
+        }
+        throw new RuntimeException("there has no number match the target");
+    }
+```
+
+
 
 2.使用一个HashMap表存储数据，以空间换时间，具体的解法效果如下
 

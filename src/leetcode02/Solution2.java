@@ -26,11 +26,17 @@ public class Solution2 {
             int sum = l1var + l2var + carry;
             //取进位
             carry = sum/10;
+            //连接节点
             ListNode next = new ListNode(sum%10);
+            //移动到下一个节点
             cursor.next = next;
             cursor = next;
-            if(l1 != null) l1 = l1.next;
-            if(l2 != null) l2 = l2.next;
+            if(l1 != null) {
+            	l1 = l1.next;
+            }
+            if(l2 != null) {
+            	l2 = l2.next;
+            }
     
         }
         return root.next;

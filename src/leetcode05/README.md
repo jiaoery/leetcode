@@ -21,7 +21,7 @@
 
 # 1.3 代码
 
-[Solution0501](./Solution0501)
+[Solution0501](./Solution0501.java)
 
 ```java
     private int[] array;
@@ -69,7 +69,9 @@
 
 洗牌算法跟暴力算法很像。在每次迭代中，生成一个范围在当前下标到数组末尾元素下标之间的随机整数。接下来，将当前元素和随机选出的下标所指的元素互相交换 - 这一步模拟了每次从 “帽子” 里面摸一个元素的过程，其中选取下标范围的依据在于每个被摸出的元素都不可能再被摸出来了。此外还有一个需要注意的细节，当前元素是可以和它本身互相交换的 - 否则生成最后的排列组合的概率就不对了。为了更清楚地理解这一过程，可以看下面这些动画：
 
-![洗牌算法](https://upfile.asqql.com/2009pasdfasdfic2009s305985-ts/2019-5/201952512522110104.gif)
+![洗牌算法](https://github.com/jiaoery/leetcode/blob/master/img/洗牌算法.gif)
+
+
 
 ## 2.2 复杂度分析
 
@@ -81,7 +83,7 @@
 
 ## 2.3代码
 
-[Solution0502](.../Solution0502)
+[Solution0502](.../Solution0502.java)
 
 ```java
 private int[] orginNums;

@@ -1,7 +1,5 @@
 package leetcode02;
 
-import java.awt.List;
-
 /**
  * @ClassName: Solution.java
  * @Description:TODO(用一句话描述该文件做什么) 

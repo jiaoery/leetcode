@@ -1,7 +1,5 @@
 package leetcode10;
 
-import javax.management.RuntimeErrorException;
-
 /**
  * @ClassName: Solution10.java
  * @Description:±éÀú·¨

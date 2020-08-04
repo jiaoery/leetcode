@@ -10,7 +10,7 @@
 
    此时慢指针向后移动一位，并将快指针指向数值赋值给慢指针指向的值。`（i++,nums[i]=nums[j])`
 
-![双指针算法]([https://github.com/jiaoery/leetcode/blob/master/img/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95.png](https://github.com/jiaoery/leetcode/blob/master/img/双指针算法.png))
+![双指针算法.png](https://upload-images.jianshu.io/upload_images/2326194-95560bc06bec6682.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 1.2 代码
 

@@ -1,4 +1,4 @@
-package package14;
+package leetcode14;
 
 /**
  * @ClassName: Solution1403.java

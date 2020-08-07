@@ -1,8 +1,4 @@
-package package14;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+package leetcode14;
 
 /**
  * @ClassName: Solution1401.java

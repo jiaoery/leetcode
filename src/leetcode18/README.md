@@ -10,7 +10,7 @@
 
 * 遍历 `num2` 每一位与 `num1` 进行相乘，将每一步的结果进行累加。
 * `num2` 除了第一位的其他位与 `num1` 运算的结果需要 **补0**
-* 计算字符串数字累加其实就是 [Qustion11:字符串相加](https://github.com/jiaoery/leetcode/tree/master/src/leetcode11）
+* 计算字符串数字累加其实就是[Qustion11:字符串相加](https://github.com/jiaoery/leetcode/tree/master/src/leetcode11)
 
 ## 1.2 代码
 

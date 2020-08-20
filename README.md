@@ -598,3 +598,24 @@ solution.shuffle();
 > nums[i] 是一个在0到49,999范围内的整数。
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode22)
+
+# Question23: 找到所有数字中消失的数字
+
+给定一个范围在  `1 ≤ a[i] ≤ n ( n = 数组大小 )` 的 整型数组，数组中的元素一些出现了两次，另一些只出现一次。
+
+找到所有在` [1, n]` 范围之间没有出现在数组中的数字。
+
+您能在不使用额外空间且时间复杂度为`O(n)`的情况下完成这个任务吗? 你可以假定返回的数组不算在额外空间内。
+
+**示例:**
+
+```
+输入:
+[4,3,2,7,8,2,3,1]
+
+输出:
+[5,6]
+```
+
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode23)
+

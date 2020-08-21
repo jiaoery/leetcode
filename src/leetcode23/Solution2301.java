@@ -31,7 +31,7 @@ public class Solution2301 {
 	 
 	 public static void main(String[] args) {
 		int[] test= {4,3,2,7,8,2,3,1};
-		List<Integer> result = new Solution2301.(test);
+		List<Integer> result = new Solution2301().findDisappearedNumbers(test);
 		System.err.println(result);
 	}
 }

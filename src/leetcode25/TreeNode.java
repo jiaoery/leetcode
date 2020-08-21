@@ -1,4 +1,4 @@
-package leetcode15;
+package leetcode25;
 
 /**
  * @ClassName: TreeNode.java

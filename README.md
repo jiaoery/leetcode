@@ -686,10 +686,30 @@ ps；这道题跟question8是一个类型题目
 输入: [7,8,9,11,12]
 输出: 1
 ```
- 
+
 
 **提示：**
 
 你的算法的时间复杂度应为O(n)，并且只能使用常数级别的额外空间。
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode26)
+
+# Question27：数字范围按位与
+
+给定范围 `[m, n]`，其中 `0 <= m <= n <= 2147483647`，返回此范围内所有数字的按位与（包含 `m, n` 两端点）。
+
+**示例 1:** 
+
+```
+输入: [5,7]
+输出: 4
+```
+
+**示例 2:**
+
+```
+输入: [0,1]
+输出: 0
+```
+
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode27)

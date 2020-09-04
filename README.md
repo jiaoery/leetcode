@@ -793,3 +793,11 @@ ps；这道题跟question8是一个类型题目
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode30)
 
+# Question31:如何判断一个链表具有环
+
+如下图所示，有一个单向链表，如何验证该链表是否具备环？
+
+![如何判定链表有环.png](https://upload-images.jianshu.io/upload_images/2326194-708f12d2e7511eb5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode31)
+

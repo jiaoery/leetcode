@@ -22,7 +22,6 @@ public class Solution3501 {
 			for(int j = i-1;j>0;j--) {
 				dp[j] = dp[j] + dp[j-1];
 			}
-			System.out.println(Arrays.toString(dp));
 		}
 		return Arrays.asList(dp);
     }

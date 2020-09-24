@@ -1131,3 +1131,21 @@ F(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode43)
 
+# Question44：螺旋矩阵II
+
+给定一个正整数 *n*，生成一个包含 1 到 *n*2 所有元素，且元素按顺时针顺序螺旋排列的正方形矩阵。
+
+**示例:**
+
+```
+输入: 3
+输出:
+[
+ [ 1, 2, 3 ],
+ [ 8, 9, 4 ],
+ [ 7, 6, 5 ]
+]
+```
+
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode44)
+

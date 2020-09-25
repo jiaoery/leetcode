@@ -1149,3 +1149,28 @@ F(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode44)
 
+# Question45: 对角线遍历
+
+给定一个含有 M x N 个元素的矩阵（M 行，N 列），请以对角线遍历的顺序返回这个矩阵中的所有元素，对角线遍历如下图所示。
+
+ 
+
+**示例:**
+
+```
+输入:
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+
+输出:  [1,2,4,7,5,3,6,8,9]
+
+解释:
+
+```
+
+![img](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/12/diagonal_traverse.png)
+
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode45)

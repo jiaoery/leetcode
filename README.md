@@ -9,7 +9,7 @@ leetcode题库网址：[https://leetcode-cn.com/](https://leetcode-cn.com/)
 >因为 nums[0] + nums[1] = 2 + 7 = 9
 >所以返回 [0, 1]
 
-解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode1)
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode01)
 
 ## Question2:两数相加
 * 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
@@ -1267,3 +1267,48 @@ r = 2, c = 4
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode47)
 
+# Question 48:矩阵置零
+
+给定一个 *m* x *n* 的矩阵，如果一个元素为 0，则将其所在行和列的所有元素都设为 0。请使用**原地**算法**。**
+
+**示例 1:**
+
+```
+输入: 
+[
+  [1,1,1],
+  [1,0,1],
+  [1,1,1]
+]
+输出: 
+[
+  [1,0,1],
+  [0,0,0],
+  [1,0,1]
+]
+```
+
+**示例 2:**
+
+```
+输入: 
+[
+  [0,1,2,0],
+  [3,4,5,2],
+  [1,3,1,5]
+]
+输出: 
+[
+  [0,0,0,0],
+  [0,4,5,0],
+  [0,3,1,0]
+]
+```
+
+**进阶:**
+
+- 一个直接的解决方案是使用  O(*m**n*) 的额外空间，但这并不是一个好的解决方案。
+- 一个简单的改进方案是使用 O(*m* + *n*) 的额外空间，但这仍然不是最好的解决方案。
+- 你能想出一个常数空间的解决方案吗？
+
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode48)

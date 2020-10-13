@@ -1373,3 +1373,34 @@ sumRange(0, 5) -> -3
 2. 会多次调用 *sumRange* 方法。
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode50)
+
+# Question51: 二维区域检索-矩阵不可变
+
+给定一个二维矩阵，计算其子矩形范围内元素的总和，该子矩阵的左上角为 (*row*1, *col*1) ，右下角为 (*row*2, *col*2)。![Range Sum Query 2D](https://assets.leetcode-cn.com/aliyun-lc-upload/images/304.png)
+
+上图子矩阵左上角 (row1, col1) = **(2, 1)** ，右下角(row2, col2) = **(4, 3)，**该子矩形内元素的总和为 8。
+
+**示例:**
+
+```
+给定 matrix = [
+[3, 0, 1, 4, 2],
+  [5, 6, 3, 2, 1],
+  [1, 2, 0, 1, 5],
+  [4, 1, 0, 1, 7],
+  [1, 0, 3, 0, 5]
+]
+
+sumRegion(2, 1, 4, 3) -> 8
+sumRegion(1, 1, 2, 2) -> 11
+sumRegion(1, 2, 2, 4) -> 12
+```
+
+**说明:**
+
+1. 你可以假设矩阵不可变。
+2. 会多次调用 *sumRegion* 方法*。*
+3. 你可以假设 *row*1 ≤ *row*2 且 *col*1 ≤ *col*2。
+
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode51)
+

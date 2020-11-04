@@ -32,7 +32,7 @@ public int[] intersection(int[] nums1, int[] nums2) {
 ### 1.2 复杂度分析
 
 * 时间复杂度：O(M*N),其中MN分别为两个数组的长度
-* 空间复杂度：O(1),排除结果数组，未引入额外数组
+* 空间复杂度：O(N),引入了一个结果集合，极限条件下，所有参数都会被放入
 
 ## 2.引入额外空间
 
@@ -67,3 +67,4 @@ public int[] intersection(int[] nums1, int[] nums2) {
 时间复杂度：O(M+N)，MN分别为两个数组的长度
 
 空间复杂度：O(M+N),引入了两个集合变量
+

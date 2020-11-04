@@ -16,7 +16,7 @@
 
 ![矩阵向内收缩图.png](https://pic.leetcode-cn.com/caa134c9e2a8d6626cf66315720f67f40b863ee90d2e01d97a77943eba45039c-%E5%9B%BE%E7%89%87.png)
 
-所以有pos1 = pos1+1,pos2 = pos2-1,终止的条件为pos1 < pos2
+所以有pos1 = pos1+1,pos2 = pos2-1,终止的条件为pos1 > pos2
 
 ## 1.2 代码
 

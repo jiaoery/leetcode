@@ -38,7 +38,7 @@ public class Solution5001 {
 
 ### 2.1 代码
 
-```
+```java
 public class Solution5002 {
 	
 	int[] sums ; 
@@ -61,3 +61,4 @@ public class Solution5002 {
 
 * 时间复杂度： O(1),由于结果已经保存了，所以返回结果只会使用常数级运算
 * 空间复杂度：O（n）,存储结果乘积需要n+1的空间大小。省略常数，为O(n)
+

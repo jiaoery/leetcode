@@ -1,8 +1,6 @@
 package leetcode43;
 
 import java.util.LinkedList;
-
-
 import leetcode37.TreeNode;
 
 /**

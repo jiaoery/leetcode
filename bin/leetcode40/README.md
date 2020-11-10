@@ -51,7 +51,6 @@
   				} 
   				//当前元素为X，上部元素也为X，身体
   				if(i>0 && board[i-1][j]=='X') {
-  					System.out.println(board[i-1][j]);
   					continue;
   				}
   				//当前元素为X，左部元素也为X，身体
@@ -65,8 +64,8 @@
   		return count;
   	}
   ```
-
   
+
 
 ## 1.3 复杂度分析
 

@@ -4,7 +4,9 @@
 
 ## 1.1 分析问题
 
-对于一个m*n的矩阵，所有的方向应该有m+n-1次。![image.png](https://pic.leetcode-cn.com/3c947d882c52cb893262275db1d40a22b8db0faf4f74126c1b8a16a87b5f8925-image.png)
+对于一个m*n的矩阵，所有的方向应该有m+n-1次
+
+![图片.png](https://pic.leetcode-cn.com/c087f3ea8c35c83bf7eee073649d05e534827ae1e8de77d7f6759c7eb3db4b4f-%E5%9B%BE%E7%89%87.png)
 
 * 方向的变更次数：遍历次数对2取余
 
@@ -27,7 +29,7 @@ for (int i = 0; i < turn; i++) {
 	if((row+column)%2==0) {
 	...
 	}else{
-	//偶数向下
+	//奇数向下
 	...
 	}
 }
@@ -95,6 +97,7 @@ public int[] findDiagonalOrder(int[][] matrix) {
 		for (int i = 0; i < turn; i++) {
 			//偶数向上
 			if((row+column)%2==0) {
+                //比纳基条件
 				while (row >= 0&& column<columns) {
 					result[index++] = matrix[row][column];
 					column++;

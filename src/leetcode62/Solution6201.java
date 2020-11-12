@@ -21,7 +21,6 @@ public class Solution6201 {
 			while (right < s.length() && chars[right] != ' ') {
 				right++;
 			}
-			System.out.println(left+","+chars[left]+","+right+","+chars[right-1]);
 			i = right;
 			while (right > left) {
 				char temp = chars[left];

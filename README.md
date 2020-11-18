@@ -1815,3 +1815,80 @@ canConstruct("aa", "aab") -> true
 - 不考虑答案输出的顺序。
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode67)
+
+# Question68： 根据字符出现的频率排序
+
+给定一个字符串，请将字符串里的字符按照出现的频率降序排列。
+
+**示例 1:**
+
+```
+输入:
+"tree"
+
+输出:
+"eert"
+
+解释:
+'e'出现两次，'r'和't'都只出现一次。
+因此'e'必须出现在'r'和't'之前。此外，"eetr"也是一个有效的答案。
+```
+
+**示例 2:**
+
+```
+输入:
+"cccaaa"
+
+输出:
+"cccaaa"
+
+解释:
+'c'和'a'都出现三次。此外，"aaaccc"也是有效的答案。
+注意"cacaca"是不正确的，因为相同的字母必须放在一起。
+```
+
+**示例 3:**
+
+```
+输入:
+"Aabb"
+
+输出:
+"bbAa"
+
+解释:
+此外，"bbaA"也是一个有效的答案，但"Aabb"是不正确的。
+注意'A'和'a'被认为是两种不同的字符。
+```
+
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode68)
+
+# Question69:从英文中重建数字
+
+给定一个**非空**字符串，其中包含字母顺序打乱的英文单词表示的数字`0-9`。按升序输出原始的数字。
+
+**注意:**
+
+1. 输入只包含小写英文字母。
+2. 输入保证合法并可以转换为原始的数字，这意味着像 "abc" 或 "zerone" 的输入是不允许的。
+3. 输入字符串的长度小于 50,000。
+
+**示例 1:**
+
+```
+输入: "owoztneoer"
+
+输出: "012" (zeroonetwo)
+```
+
+**示例 2:**
+
+```
+输入: "fviefuro"
+
+输出: "45" (fourfive)
+```
+
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode69)
+

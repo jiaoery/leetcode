@@ -2332,3 +2332,40 @@ n = 15,
 2. 输入字符串将以 **a+bi** 的形式给出，其中整数 **a** 和 **b** 的范围均在 [-100, 100] 之间。**输出也应当符合这种形式**。
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode83)
+
+# Question84：单词规律
+
+给定一种规律 `pattern` 和一个字符串 `str` ，判断 `str` 是否遵循相同的规律。
+
+这里的 **遵循** 指完全匹配，例如， `pattern` 里的每个字母和字符串 `str` 中的每个非空单词之间存在着双向连接的对应规律。
+
+**示例1:**
+
+```
+输入: pattern = "abba", str = "dog cat cat dog"
+输出: true
+```
+
+**示例 2:**
+
+```
+输入:pattern = "abba", str = "dog cat cat fish"
+输出: false
+```
+
+**示例 3:**
+
+```
+输入: pattern = "aaaa", str = "dog cat cat dog"
+输出: false
+```
+
+**示例 4:**
+
+```
+输入: pattern = "abba", str = "dog dog dog dog"
+输出: false
+```
+
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode84)
+

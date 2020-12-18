@@ -31,7 +31,6 @@ public class Solution8601 {
 				
 			}
 		}
-		System.out.println(Arrays.toString(chars));
 		return write;
 	}
 	

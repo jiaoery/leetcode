@@ -87,7 +87,7 @@ public class Solution4302 {
 		treeNode6.right = treeNode8;
 		treeNode7.right = treeNode9;
 		
-		TreeNode resulTreeNode  = new Solution4302().mergeTrees(treeNode1, treeNode5);
+		new Solution4302().mergeTrees(treeNode1, treeNode5);
 	}
 	
 	

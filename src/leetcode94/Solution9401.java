@@ -29,7 +29,7 @@ public class Solution9401 {
 		String s1 = "abc",t1 = "ahbgdc";
 		System.out.println("IsSubsequence:"+solution.isSubsequence(s1, t1));
 		
-		String s2 = "axc",t2 = "ahbgdc";
+		String s2 = "aewfa",t2 = "aewfafwafjlwajflwajflwafj";
 		System.out.println("IsSubsequence:"+solution.isSubsequence(s2, t2));
 	}
 }

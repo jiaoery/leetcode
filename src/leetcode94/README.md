@@ -35,13 +35,15 @@ JAVA中可以使用 String 类中charAt函数来判定某个字符是否存在�
 ### 2.1 代码
 
 ```java
-public boolean isSubsequence(String s, String t) {
+ public boolean isSubsequence(String s, String t) {
+		 int pre = 0;
 		 for (int i = 0; i < s.length(); i++) {
 			char ps = s.charAt(i);
 			int ts = t.indexOf(ps);
-			if (ts == -1) {
+			if (ts == -1||ts<pre) {
 				return false;
 			}
+			pre = ts;
 		}
 		 return true;
 	 }

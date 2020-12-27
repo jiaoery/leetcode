@@ -11,12 +11,14 @@ package leetcode94;
 public class Solution9402 {
 
 	 public boolean isSubsequence(String s, String t) {
+		 int pre = 0;
 		 for (int i = 0; i < s.length(); i++) {
 			char ps = s.charAt(i);
 			int ts = t.indexOf(ps);
-			if (ts == -1) {
+			if (ts == -1||ts<pre) {
 				return false;
 			}
+			pre = ts;
 		}
 		 return true;
 	 }
@@ -26,7 +28,7 @@ public class Solution9402 {
 			String s1 = "abc",t1 = "ahbgdc";
 			System.out.println("IsSubsequence:"+solution.isSubsequence(s1, t1));
 			
-			String s2 = "axc",t2 = "ahbgdc";
+			String s2 = "aewfa",t2 = "aewfafwafjlwajflwajflwafj";
 			System.out.println("IsSubsequence:"+solution.isSubsequence(s2, t2));
 		}
 }

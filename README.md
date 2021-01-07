@@ -2865,7 +2865,41 @@ s = "abpcplea", d = ["a","b","c"]
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode95)
 
-# Question96:种花问题
+# Question96：同构字符串
+
+给定两个字符串 ***s*** 和 **t**，判断它们是否是同构的。
+
+如果 ***s*** 中的字符可以被替换得到 ***t\*** ，那么这两个字符串是同构的。
+
+所有出现的字符都必须用另一个字符替换，同时保留字符的顺序。两个字符不能映射到同一个字符上，但字符可以映射自己本身。
+
+**示例 1:**
+
+```
+输入: s = "egg", t = "add"
+输出: true
+```
+
+**示例 2:**
+
+```
+输入: s = "foo", t = "bar"
+输出: false
+```
+
+**示例 3:**
+
+```
+输入: s = "paper", t = "title"
+输出: true
+```
+
+**说明:**
+你可以假设 ***s*** 和 ***t\*** 具有相同的长度。
+
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode96)
+
+# Question97:种花问题
 
 假设有一个很长的花坛，一部分地块种植了花，另一部分却没有。可是，花不能种植在相邻的地块上，它们会争夺水源，两者都会死去。
 
@@ -2888,11 +2922,8 @@ s = "abpcplea", d = ["a","b","c"]
 **提示：**
 
 - `1 <= flowerbed.length <= 2 * 104`
-
 - `flowerbed[i]` 为 `0` 或 `1`
-
 - `flowerbed` 中不存在相邻的两朵花
-
 - `0 <= n <= flowerbed.length`
 
-解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode96)
+解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode97)

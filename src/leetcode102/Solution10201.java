@@ -26,6 +26,7 @@ public class Solution10201 {
 				}
 			}else {
 				int match = distance - 2*i;
+				//中间行每次间隔都是 distance - 2*i
 				while (index < s.length()) {
 					result.append(s.charAt(index));
 					index += match;

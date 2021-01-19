@@ -3187,3 +3187,63 @@ P     I
 对于本题而言，当 `needle` 是空字符串时我们应当返回 0 。这与C语言的 [strstr()](https://baike.baidu.com/item/strstr/811469) 以及 Java的 [indexOf()](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#indexOf(java.lang.String)) 定义相符。
 
 [点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode104)
+
+# Question105:回文数
+
+判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
+
+**示例 1:**
+
+```
+输入: 121
+输出: true
+```
+
+**示例 2:**
+
+```
+输入: -121
+输出: false
+解释: 从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。
+```
+
+**示例 3:**
+
+```
+输入: 10
+输出: false
+解释: 从右向左读, 为 01 。因此它不是一个回文数。
+```
+
+**进阶:**
+
+你能不将整数转为字符串来解决这个问题吗？
+
+[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode105)
+
+# Question106:2的幂
+
+给定一个整数，编写一个函数来判断它是否是 2 的幂次方。
+
+**示例 1:**
+
+```
+输入: 1
+输出: true
+解释: 20 = 1
+```
+
+**示例 2:**
+
+```
+输入: 16
+输出: true
+解释: 24 = 16
+```
+
+**示例 3:**
+
+```
+输入: 218
+输出: false
+```

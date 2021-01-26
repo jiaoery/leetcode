@@ -14,6 +14,7 @@ public class Solution10802 {
 		if(num%5==0) return isUgly(num/5);
 	    if(num%3==0)return isUgly(num/3);
 	    if((num&1)==0)return isUgly(num>>1);
+	  
 	    return num==1;
 	}
 	

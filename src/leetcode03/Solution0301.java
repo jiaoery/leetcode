@@ -11,7 +11,7 @@ package leetcode03;
  * @version V1.0.0
  * @since JDK 1.8
  */
-public class Solution03 {
+public class Solution0301 {
 
 	 public static int pivotIndex(int[] nums) {
 	        for(int i=0;i<nums.length;i++){

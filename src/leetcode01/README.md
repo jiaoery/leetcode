@@ -1,6 +1,8 @@
 # 解题思路
 
-1.可以使用两次循环来实现效果，解法效果如下
+## 1.暴力解法
+
+### 1.1可以使用两次循环来实现效果，解法效果如下
 
 ```java
 public static int[] twoSum1(int[] nums, int target) {
@@ -15,9 +17,14 @@ public static int[] twoSum1(int[] nums, int target) {
     }
 ```
 
+### 1.2复杂度分析
 
+* 时间复杂度：O(N^2),N为输入数组长度
+* 空间复杂度：O(1)
 
-2.使用一个HashMap表存储数据，以空间换时间，具体的解法效果如下
+## Hash表
+
+### 2.1使用一个HashMap表存储数据，以空间换时间，具体的解法效果如下
 
 ![img](https://pic.leetcode-cn.com/146e209493728cd7b9fd6095c5947300732799db9b28b2f8e497525ea7b31d58-Messages%20Image(1369442164).png)
 
@@ -39,4 +46,7 @@ public static int[] twoSum(int[] nums, int target) {
     }
 ```
 
-其中，只循环一次，时间复杂为O(n),空间复杂度为S(n).
+### 2.2 辅助度分析
+
+* 时间复杂度：O(N)，N为输入数组的长度
+* 空间复杂度：O(N)，Hash表极限情况下需要存储所有数组数据

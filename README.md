@@ -3657,6 +3657,23 @@ HammingDistance(4, 14) + HammingDistance(4, 2) + HammingDistance(14, 2) = 2 + 2 
 解释: 5! = 120, 尾数中有 1 个零.
 ```
 
-**说明:** 你算法的时间复杂度应为 *O*(log *n*) 。
+**说明:** 算法的时间复杂度应为 *O*(log *n*) 。
 
 [点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode119)
+
+# Question120:连续子数组的最大和
+输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
+
+要求时间复杂度为O(n)。
+
+**示例1:**
+```
+输入: nums = [-2,1,-3,4,-1,2,1,-5,4]
+输出: 6
+解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
+```
+**提示：**
+* 1 <= arr.length <= 10^5
+* -100 <= arr[i] <= 100
+
+[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode120)

@@ -10,6 +10,7 @@
 * 最终代码效果
 
   ```java
+  public class Solution{
   public static int searchInsert(int[] nums, int target) {
           if(nums == null){
               throw new RuntimeException("the arrows is null");
@@ -22,6 +23,7 @@
           }
           return nums.length;
       }
+  }
   ```
 
   

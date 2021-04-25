@@ -16,7 +16,7 @@
 * 时间复杂度：` O(n^2)`
   乘方时间复杂度来自于 `list.remove（list.pop）`。每次操作都是线性时间的，总共发生` n` 次。
 
-* 空间复杂度： O(n)O(n)
+* 空间复杂度： O(n)
   因为需要实现 重置 方法，需要额外的空间把原始数组另存一份，在重置的时候用来恢复原始状态。
 
 # 1.3 代码
@@ -24,6 +24,7 @@
 [Solution0501](./Solution0501.java)
 
 ```java
+public class Solution {
     private int[] array;
     private int[] original;
 
@@ -41,13 +42,13 @@
         array = nums;
         original = nums.clone();
     }
-    
+
     public int[] reset() {
         array = original;
         original = original.clone();
         return array;
     }
-    
+
     public int[] shuffle() {
         List<Integer> aux = getArrayCopy();
 
@@ -59,6 +60,7 @@
 
         return array;
     }
+}
 ```
 
 # 2 洗牌算法
@@ -86,31 +88,33 @@
 [Solution0502](.../Solution0502.java)
 
 ```java
-private int[] orginNums;
-	private int[] shuffleNums;
+public class Solution {
+    private int[] orginNums;
+    private int[] shuffleNums;
 
-	public Solution0502(int[] nums) {
-		this.orginNums = nums.clone();
-		this.shuffleNums = nums;
-	}
+    public Solution0502(int[] nums) {
+        this.orginNums = nums.clone();
+        this.shuffleNums = nums;
+    }
 
-	/** Resets the array to its original configuration and return it. */
-	public int[] reset() {
-		return orginNums;
-	}
+    /** Resets the array to its original configuration and return it. */
+    public int[] reset() {
+        return orginNums;
+    }
 
-	/** Returns a random shuffling of the array. */
-	public int[] shuffle() {
-		for (int i = 0; i < shuffleNums.length; i++) {
-			int j = new Random().nextInt(shuffleNums.length);
-			if (i != j) {
-				shuffleNums[j] += shuffleNums[i];
-				shuffleNums[i] = shuffleNums[j] - shuffleNums[i];
-				shuffleNums[j] = shuffleNums[j] - shuffleNums[i];
-			}
-		}
-		return shuffleNums;
-	}
+    /** Returns a random shuffling of the array. */
+    public int[] shuffle() {
+        for (int i = 0; i < shuffleNums.length; i++) {
+            int j = new Random().nextInt(shuffleNums.length);
+            if (i != j) {
+                shuffleNums[j] += shuffleNums[i];
+                shuffleNums[i] = shuffleNums[j] - shuffleNums[i];
+                shuffleNums[j] = shuffleNums[j] - shuffleNums[i];
+            }
+        }
+        return shuffleNums;
+    }
+}
 ```
 
 

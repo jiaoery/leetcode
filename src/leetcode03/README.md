@@ -13,23 +13,25 @@
 ### 1.1 代码
 
 ```java
-public int pivotIndex(int[] nums) {
-        for(int i=0;i<nums.length;i++){
-	            int leftNum = 0;
-	            int rightNum = 0;
-	            for(int j = 0;j<nums.length;j++){
-	                if(j<i){
-	                    leftNum+=nums[j];
-	                }else if(j>i){
-	                    rightNum+=nums[j];
-	                }
-	            }
-	            if(leftNum == rightNum){
-	                return i;
-	            }
-	        }
-	        return -1;
+public class Solution {
+  public int pivotIndex(int[] nums) {
+    for (int i = 0; i < nums.length; i++) {
+      int leftNum = 0;
+      int rightNum = 0;
+      for (int j = 0; j < nums.length; j++) {
+        if (j < i) {
+          leftNum += nums[j];
+        } else if (j > i) {
+          rightNum += nums[j];
+        }
+      }
+      if (leftNum == rightNum) {
+        return i;
+      }
     }
+    return -1;
+  }
+}
 ```
 
 ### 1.2 复杂度分析
@@ -45,25 +47,27 @@ public int pivotIndex(int[] nums) {
 ### 2.1 代码
 
 ```java
-public int pivotIndex(int[] nums) {
-		int sum = 0;
-		int size = nums.length;
-		if (size == 0) {
-			return -1;
-		}
-		int[] dpl = new int[size];
-		for (int i = 0; i < size; i++) {
-			sum += nums[i];
-			dpl[i] = sum;
-		}
+public class Solution {
+  public int pivotIndex(int[] nums) {
+    int sum = 0;
+    int size = nums.length;
+    if (size == 0) {
+      return -1;
+    }
+    int[] dpl = new int[size];
+    for (int i = 0; i < size; i++) {
+      sum += nums[i];
+      dpl[i] = sum;
+    }
 
-		for (int i = 0; i < size; i++) {
-			if (sum - dpl[i]  == dpl[i]- nums[i]) {
-				return i;
-			}
-		}
-		return -1;
-	}
+    for (int i = 0; i < size; i++) {
+      if (sum - dpl[i] == dpl[i] - nums[i]) {
+        return i;
+      }
+    }
+    return -1;
+  }
+}
 ```
 
 ### 2.2 复杂度分析
@@ -84,24 +88,26 @@ public int pivotIndex(int[] nums) {
 ### 3.1 代码
 
 ```java
- public int pivotIndex(int[] nums) {
-		 int sum =0;
-		 for (int i = 0; i < nums.length; i++) {
-			sum+=nums[i];
-		}
-		 int target = 0;
-		for (int i = 0; i < nums.length; i++) {
-			sum -= nums[i];
-			if(target == sum) {
-				return i;
-			}
-			target +=nums[i];
-		}
-		return -1;
-	 }
+public class Solution {
+  public int pivotIndex(int[] nums) {
+    int sum = 0;
+    for (int i = 0; i < nums.length; i++) {
+      sum += nums[i];
+    }
+    int target = 0;
+    for (int i = 0; i < nums.length; i++) {
+      sum -= nums[i];
+      if (target == sum) {
+        return i;
+      }
+      target += nums[i];
+    }
+    return -1;
+  }
+}
 ```
 
 ### 3.2 复杂度分析
 
-* 时间复杂度：O(N)
-* 空间复杂度：O(1)
+* 时间复杂度：O(N),因为只是循环数组两次
+* 空间复杂度：O(1)，使用常数级的额外空间 target，sum

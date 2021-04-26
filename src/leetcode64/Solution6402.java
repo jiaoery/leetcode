@@ -2,18 +2,18 @@ package leetcode64;
 
 /**
  * @ClassName: Solution6402.java
- * @Description:Ë«Ö¸Õë 
+ * @Description:Ë«Ö¸ï¿½ï¿½ 
  * 
  * @author  jixiang
  * @version v1.0.0 
- * @Date    2020Äê11ÔÂ13ÈÕ ÏÂÎç3:36:14 
+ * @Date    2020ï¿½ï¿½11ï¿½ï¿½13ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½3:36:14 
  */
 public class Solution6402 {
 
 	 public static int firstUniqChar(String s) {
 		 for (int i = 0; i < s.length(); i++) {
 			 char ch = s.charAt(i);
-			 //Ç°ºó¾ùÎªÍ¬Ò»¸öÎ»ÖÃ
+			 //Ç°ï¿½ï¿½ï¿½ÎªÍ¬Ò»ï¿½ï¿½Î»ï¿½ï¿½
 			if(s.indexOf(ch) == s.lastIndexOf(ch)) {
 				return i;
 			}
@@ -23,7 +23,7 @@ public class Solution6402 {
 	 
 	 
 	 public static void main(String[] args) {
-			String s = "leetcode";
+			String s = "leetcode123";
 			System.out.println("position:"+firstUniqChar(s));
 			
 			String s1 = "loveleetcode";

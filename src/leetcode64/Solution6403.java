@@ -2,21 +2,21 @@ package leetcode64;
 
 /**
  * @ClassName: Solution6403.java
- * @Description:26×ÖÄ¸Êý×é
+ * @Description:26ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½
  * 
  * @author  jixiang
  * @version v1.0.0 
- * @Date    2020Äê11ÔÂ13ÈÕ ÏÂÎç4:03:57 
+ * @Date    2020ï¿½ï¿½11ï¿½ï¿½13ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½4:03:57 
  */
 public class Solution6403 {
 	public static int firstUniqChar(String s) {
 		int[] words = new int[26];
-		//Í³¼ÆÃ¿¸ö×Ö·û³öÏÖµÄ´ÎÊý
+		//Í³ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ÖµÄ´ï¿½ï¿½ï¿½
 		for (int i = 0; i < s.length(); i++) {
 			words[s.charAt(i)-'a']+=1;
 		}
 		
-		//µÃ³ö½áÂÛ
+		//ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½
 		for (int i = 0; i < s.length(); i++) {
 			if(words[s.charAt(i)-'a']==1) {
 				return i;
@@ -26,7 +26,7 @@ public class Solution6403 {
 	}
 	
 	 public static void main(String[] args) {
-			String s = "leetcode";
+			String s = "leetcode123";
 			System.out.println("position:"+firstUniqChar(s));
 			
 			String s1 = "loveleetcode";

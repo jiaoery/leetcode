@@ -4,21 +4,21 @@ import java.util.HashMap;
 
 /**
  * @ClassName: Soluton64.java
- * @Description:Ê¹ÓÃ¶îÍâ¿Õ¼ä
+ * @Description:Ê¹ï¿½Ã¶ï¿½ï¿½ï¿½Õ¼ï¿½
  * 
  * @author  jixiang
  * @version v1.0.0 
- * @Date    2020Äê11ÔÂ13ÈÕ ÉÏÎç11:27:22 
+ * @Date    2020ï¿½ï¿½11ï¿½ï¿½13ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½11:27:22 
  */
 public class Solution6401 {
 	public static int firstUniqChar(String s) {
 		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-		//¼ÇÂ¼Ã¿¸ö×Ö·û³öÏÖ´ÎÊý
+		//ï¿½ï¿½Â¼Ã¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½
 		for (int i = 0; i < s.length(); i++) {
 			map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0)+1);
 		}
 		
-		//Í³¼Æ×Ö·û³öÏÖ´ÎÊý
+		//Í³ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½
 		for (int i = 0; i < s.length(); i++) {
 			int count = map.get(s.charAt(i));
 			if(count ==1) {
@@ -30,7 +30,7 @@ public class Solution6401 {
 	
 	
 	public static void main(String[] args) {
-		String s = "leetcode";
+		String s = "leetcode123";
 		System.out.println("position:"+firstUniqChar(s));
 		
 		String s1 = "loveleetcode";

@@ -1,5 +1,5 @@
 # Leetcode刷题记录
-leetcode题库网址：[https://leetcode-cn.com/](https://leetcode-cn.com/)
+leetcode题库网址：[https://leetcode123-cn.com/](https://leetcode-cn.com/)
 ## Question1:两数之和
 * 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
 你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。
@@ -1435,7 +1435,7 @@ sumRegion(1, 2, 2, 4) -> 12
 我们定义，在以下情况时，单词的大写用法是正确的：
 
 1. 全部字母都是大写，比如"USA"。
-2. 单词中所有字母都不是大写，比如"leetcode"。
+2. 单词中所有字母都不是大写，比如"leetcode123"。
 3. 如果单词不只含有一个字母，只有首字母大写， 比如 "Google"。
 
 否则，我们定义这个单词没有正确使用大写字母。
@@ -1723,7 +1723,7 @@ sumRegion(1, 2, 2, 4) -> 12
 **示例：**
 
 ```
-s = "leetcode"
+s = "leetcode123"
 返回 0
 
 s = "loveleetcode"
@@ -2815,7 +2815,7 @@ M             1000
 
 **致谢：**
 
-特别感谢 [@pbrother ](https://leetcode.com/pbrother/)添加此问题并且创建所有测试用例。
+特别感谢 [@pbrother ](https://leetcode123.com/pbrother/)添加此问题并且创建所有测试用例。
 
 **示例 1：**
 
@@ -3379,7 +3379,7 @@ P     I
 
 1. 给定的整数保证在 32 位带符号整数的范围内。
 2. 2.你可以假定二进制数不包含前导零位。
-3. 本题与 1009 https://leetcode-cn.com/problems/complement-of-base-10-integer/ 相同
+3. 本题与 1009 https://leetcode123-cn.com/problems/complement-of-base-10-integer/ 相同
 
 [点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode110)
 
@@ -3708,7 +3708,7 @@ HammingDistance(4, 14) + HammingDistance(4, 2) + HammingDistance(14, 2) = 2 + 2 
 [点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode121)
 
 # Question 122 : 两数相除
-[leetcode 19](https://leetcode-cn.com/problems/divide-two-integers/)
+[leetcode29](https://leetcode-cn.com/problems/divide-two-integers/)
 给定两个整数，被除数``dividend``和除数``divisor``。将两数相除，要求不使用乘法、除法和 ``mod ``运算符。
 
 返回被除数``dividend``除以除数``divisor``得到的商。
@@ -3739,3 +3739,51 @@ HammingDistance(4, 14) + HammingDistance(4, 2) + HammingDistance(14, 2) = 2 + 2 
 假设我们的环境只能存储 32 位有符号整数，其数值范围是 ``[−2^31, 2^31− 1]``。本题中，如果除法结果溢出，则返回 2^31− 1。
 ```
 [点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode122)
+
+# Question123：完美数
+[leetcode207](https://leetcode-cn.com/problems/perfect-number/)
+
+对于一个正整数，如果它和除了它自身以外的所有 正因子 之和相等，我们称它为 「完美数」。
+
+给定一个整数n，如果是完美数，返回 true，否则返回 false
+
+**示例 1：**
+```
+输入：28
+输出：True
+解释：28 = 1 + 2 + 4 + 7 + 14
+1, 2, 4, 7, 和 14 是 28 的所有正因子。
+```
+
+**示例 2：**
+```
+输入：num = 6
+输出：true
+```
+
+**示例 3：**
+```
+输入：num = 496
+输出：true
+```
+
+**示例 4：**
+```
+输入：num = 8128
+输出：true
+```
+
+**示例 5：**
+```
+输入：num = 2
+输出：false
+```
+
+
+
+**提示：**
+```
+1 <= num <= 108
+```
+
+[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode123)

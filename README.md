@@ -1,6 +1,7 @@
 # Leetcode刷题记录
 leetcode题库网址：[https://leetcode123-cn.com/](https://leetcode-cn.com/)
-## Question1:两数之和
+# Question1:两数之和
+
 * 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
 你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。
 
@@ -11,7 +12,8 @@ leetcode题库网址：[https://leetcode123-cn.com/](https://leetcode-cn.com/)
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode01)
 
-## Question2:两数相加
+# Question2:两数相加
+
 * 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。示例：
@@ -191,7 +193,7 @@ solution.shuffle();
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode07)
 
-## Question8:二叉树最大深度
+# Question8:二叉树最大深度
 
 给定一个二叉树，找出其最大深度。
 
@@ -212,7 +214,7 @@ solution.shuffle();
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode08)
 
-## Question9:整数反转
+# Question9:整数反转
 
 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
 
@@ -237,7 +239,7 @@ solution.shuffle();
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode09)
 
-## Question10：魔术索引
+# Question10：魔术索引
 
 魔术索引。 在数组A[0...n-1]中，有所谓的魔术索引，满足条件A[i] = i。给定一个有序整数数组，编写一种方法找出魔术索引，若有的话，在数组A中找出一个魔术索引，如果没有，则返回-1。若有多个魔术索引，返回索引值最小的一个。
 
@@ -1043,7 +1045,7 @@ XXXX
 
 解：[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode40)
 
-## Question41：旋转数组
+# Question41：旋转数组
 
 给定一个长度为 *n* 的整数数组 `A` 。
 
@@ -1661,7 +1663,7 @@ sumRegion(1, 2, 2, 4) -> 12
 
 # Question63：翻转字符串里面的单词
 
-#### [翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
+[翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
 
 给定一个字符串，逐个翻转字符串中的每个单词。
 
@@ -3909,5 +3911,51 @@ HammingDistance(4, 14) + HammingDistance(4, 2) + HammingDistance(14, 2) = 2 + 2 
 
 **进阶：**链表可以选用迭代或递归方式完成反转。你能否用两种方法解决这道题？
 
-[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode125)
+[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode126)
+
+# Question127:环形链表
+
+[141.环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
+
+给定一个链表，判断链表中是否有环。
+
+如果链表中有某个节点，可以通过连续跟踪 `next` 指针再次到达，则链表中存在环。为了表示给定链表中的环，我们使用整数 `pos` 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 `pos` 是 `-1`，则在该链表中没有环。**注意：`pos` 不作为参数进行传递**，仅仅是为了标识链表的实际情况。
+
+如果链表中存在环，则返回 `true` 。 否则，返回 `false` 。
+
+**进阶：**
+
+你能用 *O(1)*（即，常量）内存解决此问题吗？
+
+**示例 1：**
+
+![img](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist.png)
+
+```
+输入：head = [3,2,0,-4], pos = 1
+输出：true
+解释：链表中有一个环，其尾部连接到第二个节点
+```
+
+**示例 2：**
+
+![img](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test2.png)
+
+```
+输入：head = [1,2], pos = 0
+输出：true
+解释：链表中有一个环，其尾部连接到第一个节点。
+```
+
+**示例 3：**
+
+![img](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test3.png)
+
+```
+输入：head = [1], pos = -1
+输出：false
+解释：链表中没有环。
+```
+
+[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode127)
 

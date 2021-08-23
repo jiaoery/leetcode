@@ -2,15 +2,19 @@ package leetcode02;
 
 /**
  * @ClassName: ListNode.java
- * @Description:»ù´¡Àà
+ * @Description:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 
  * @author  jixiang
  * @version v1.0.0 
- * @Date    2020Äê7ÔÂ3ÈÕ ÏÂÎç4:06:12 
+ * @Date    2020ï¿½ï¿½7ï¿½ï¿½3ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½4:06:12 
  */
 public class ListNode {
 	public int val;
 	public ListNode next;
 	public ListNode(int x) { val = x; }
+	public ListNode(int x,ListNode next){
+		this.val = x;
+		this.next = next;
+	}
 
 }

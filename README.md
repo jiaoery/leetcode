@@ -3875,7 +3875,7 @@ HammingDistance(4, 14) + HammingDistance(4, 2) + HammingDistance(14, 2) = 2 + 2 
 
 # Question126:反转链表
 
-[leetcode206]{https://leetcode-cn.com/problems/reverse-linked-list/}
+[leetcode206.反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 给你单链表的头节点 `head` ，请你反转链表，并返回反转后的链表。
 

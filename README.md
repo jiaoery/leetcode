@@ -4180,3 +4180,41 @@ myStack.empty(); // 返回 False
 - 你能否实现每个操作均摊时间复杂度为 `O(1)` 的队列？换句话说，执行 `n` 个操作的总时间复杂度为 `O(n)` ，即使其中一个操作可能花费较长时间。
 
 [点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode134)
+
+# Question135：K次取反后最大化的数组和
+
+[1005.K次取反后最大化的数组和](https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/)
+
+给你一个整数数组 `nums` 和一个整数 `k` ，按以下方法修改该数组：
+
+- 选择某个下标 `i` 并将 `nums[i]` 替换为 `-nums[i]` 。
+
+重复这个过程恰好 `k` 次。可以多次选择同一个下标 `i` 。
+
+以这种方式修改数组后，返回数组 **可能的最大和** 。
+
+**示例 1：**
+
+```
+输入：nums = [4,2,3], k = 1
+输出：5
+解释：选择下标 1 ，nums 变为 [4,-2,3] 。
+```
+
+**示例 2：**
+
+```
+输入：nums = [3,-1,0,2], k = 3
+输出：6
+解释：选择下标 (1, 2, 2) ，nums 变为 [3,1,0,2] 。
+```
+
+**示例 3：**
+
+```
+输入：nums = [2,-3,-1,5,-4], k = 2
+输出：13
+解释：选择下标 (1, 4) ，nums 变为 [2,3,-1,5,4] 。
+```
+
+[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode135)

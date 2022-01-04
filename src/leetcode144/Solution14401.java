@@ -71,10 +71,10 @@ public class Solution14401 {
         String input1 = "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext";
         System.out.println("input:"+input1+";result:"+solution.lengthLongestPath(input1));
 
-//        String input2 =  "a";
-//        System.out.println("input:"+input2+";result:"+solution.countLevel(input2));
-//
-//        String input3 = "file1.txt\nfile2.txt\nlongfile.txt";
-//        System.out.println("input:"+input3+";result:"+solution.countLevel(input3));
+        String input2 =  "a";
+        System.out.println("input:"+input2+";result:"+solution.countLevel(input2));
+
+        String input3 = "file1.txt\nfile2.txt\nlongfile.txt";
+        System.out.println("input:"+input3+";result:"+solution.countLevel(input3));
     }
 }

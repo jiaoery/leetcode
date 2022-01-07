@@ -4696,7 +4696,7 @@ dir
 
 [点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode144)
 
-# Question：基本计算器II
+# Question145：基本计算器II
 
 #### [227. 基本计算器 II](https://leetcode-cn.com/problems/basic-calculator-ii/)
 
@@ -4727,3 +4727,29 @@ dir
 
 [点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode145)
 
+# Question146:基本计算器
+
+给你一个字符串表达式 `s` ，请你实现一个基本计算器来计算并返回它的值。
+
+**示例 1：**
+
+```
+输入：s = "1 + 1"
+输出：2
+```
+
+**示例 2：**
+
+```
+输入：s = " 2-1 + 2 "
+输出：3
+```
+
+**示例 3：**
+
+```
+输入：s = "(1+(4+5+2)-3)+(6+8)"
+输出：23
+```
+
+[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode146)

@@ -3,30 +3,30 @@ package leetcode49;
 import java.util.Arrays;
 
 /**
- * @ClassName: Solution4902.java
- * @Description:TODO(ÓÃÒ»¾ä»°ÃèÊö¸ÃÎÄ¼ş×öÊ²Ã´)
+ * @ClassName: Solution14902.java
+ * @Description:TODO(ï¿½ï¿½Ò»ï¿½ä»°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ê²Ã´)
  * 
  * @author jixiang
  * @version v1.0.0
- * @Date 2020Äê10ÔÂ12ÈÕ ÏÂÎç4:00:32
+ * @Date 2020ï¿½ï¿½10ï¿½ï¿½12ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½4:00:32
  */
 public class Solution4902 {
 
 	public static void gameOfLife(int[][] board) {
-		// Çø¼äÇøÓò
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		int[] neighbors = { 0, 1, -1 };
-		// ±éÀúËùÓĞ½Úµã
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ½Úµï¿½
 		for (int row = 0; row < board.length; row++) {
 			for (int col = 0; col < board[0].length; col++) {
-				// Í³¼Æ·¢Éú´ÎÊı
+				// Í³ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				int neighbor = 0;
 				for (int i = 0; i < neighbors.length; i++) {
 					for (int j = 0; j < neighbors.length; j++) {
-						// ³ı¿ªµ±Ç°½Úµã
+						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Úµï¿½
 						if (neighbors[i] != 0 || neighbors[j] != 0) {
 							int r = row + neighbors[i];
 							int c = col + neighbors[j];
-							// ±ß¼ÊÌõ¼şÅĞ¶Ï
+							// ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¶ï¿½
 							if (r >= 0 && r < board.length && c >= 0 && c < board[0].length
 									&& Math.abs(board[r][c]) == 1) {
 								neighbor++;
@@ -35,19 +35,19 @@ public class Solution4902 {
 					}
 				}
 
-				// Çé¿ö1 3 £»ÓÉ»î×ªËÀ£¬±ê¼ÇÎª-1
+				// ï¿½ï¿½ï¿½1 3 ï¿½ï¿½ï¿½É»ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª-1
 				if ((board[row][col] == 1) && (neighbor > 3 || neighbor < 2)) {
 					board[row][col] = -1;
 				}
 
-				// Çé¿ö4£¬ÓÉËÀ×ªÉú£¬±ê¼ÇÎª2
+				// ï¿½ï¿½ï¿½4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª2
 				if (board[row][col] == 0 && neighbor == 3) {
 					board[row][col] = 2;
 				}
 			}
 		}
 
-		// ¸ù¾İ±ê¼ÇÎ»ÖØĞÂ¸³Öµ
+		// ï¿½ï¿½ï¿½İ±ï¿½ï¿½Î»ï¿½ï¿½ï¿½Â¸ï¿½Öµ
 		for (int row = 0; row < board.length; row++) {
 			for (int col = 0; col < board[0].length; col++) {
 				if (board[row][col] == 2) {

@@ -8,13 +8,14 @@ public class Solution12604 {
         if (head==null||head.next==null){
             return head;
         }
-        ListNode pre = head;
+        ListNode beg = head;
         ListNode end = head.next;
         while (end!=null){
-            pre.next = end.next;
+            //摘除end结点
+            beg.next = end.next;
             end.next  = head;
             head = end;
-            end = pre.next;
+            end = beg.next;
         }
         return head;
     }

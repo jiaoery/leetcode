@@ -9,20 +9,21 @@ public class Solution12602 {
            return head;
        }
        //前置位
-       ListNode pre = null;
+       ListNode beg = null;
+       ListNode mid = head;
        //后位
        ListNode end = head.next;
        while (end!=null){
            //改变位
-           head.next = pre;
+           mid.next = beg;
            //向后移动所有指针
-           pre = head;
-           head = end;
+           beg = mid;
+           mid = end;
            end = end.next;
        }
        //处理最后一个节点
-       head.next = pre;
-       return head;
+       mid.next = beg;
+       return mid;
     }
 
     public static void main(String[] args) {

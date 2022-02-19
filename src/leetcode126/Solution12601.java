@@ -7,17 +7,17 @@ public class Solution12601 {
     //头插法反转链表
     public ListNode reverseList(ListNode head) {
         ListNode temp;
-        ListNode p = null;
+        ListNode newHead = null;
         while (head!=null) {
             temp = head;
             //head 向后移动
             head = head.next;
             //将temp取到的值指向p
-            temp.next =p;
-            //p指向temp所在位置
-            p = temp;
+            temp.next =newHead;
+            //newHead指向temp所在位置
+            newHead = temp;
         }
-        return p;
+        return newHead;
     }
 
     public static void main(String[] args) {

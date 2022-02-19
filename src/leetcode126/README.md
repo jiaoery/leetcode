@@ -30,20 +30,21 @@
 
 ```java
  public class Solution{
-   public ListNode reverseList(ListNode head) {
-        ListNode temp;
-        ListNode p = null;
-        while (head!=null) {
-            temp = head;
-            //head 向后移动
-            head = head.next;
-            //将temp取到的值指向p
-            temp.next =p;
-            //p指向temp所在位置
-            p = temp;
-        }
-        return p;
-    }
+     //头插法反转链表
+     public ListNode reverseList(ListNode head) {
+       ListNode temp;
+       ListNode newHead = null;
+       while (head!=null) {
+         temp = head;
+         //head 向后移动
+         head = head.next;
+         //将temp取到的值指向p
+         temp.next =newHead;
+         //newHead指向temp所在位置
+         newHead = temp;
+       }
+       return newHead;
+     }
  }
 
 ```
@@ -81,20 +82,22 @@
 
 ```java
 public classs Solution{
-  public ListNode reverseList(ListNode head) {
+    //就地逆转法反转链表
+    public ListNode reverseList(ListNode head) {
         if (head==null||head.next==null){
-            return head;
+        return head;
         }
-        ListNode pre = head;
+        ListNode beg = head;
         ListNode end = head.next;
         while (end!=null){
-            pre.next = end.next;
-            end.next  = head;
-            head = end;
-            end = pre.next;
+        //摘除end结点
+        beg.next = end.next;
+        end.next  = head;
+        head = end;
+        end = beg.next;
         }
         return head;
-    }
+        }
 }
 ```
 
@@ -130,20 +133,27 @@ public classs Solution{
 
 ```java
 public class Solution{
-   public ListNode reverseList(ListNode head) {
-        ListNode temp;
-        ListNode p = null;
-        while (head!=null) {
-            temp = head;
-            //head 向后移动
-            head = head.next;
-            //将temp取到的值指向p
-            temp.next =p;
-            //p指向temp所在位置
-            p = temp;
-        }
-        return p;
+  public ListNode reverseList(ListNode head) {
+    if(head==null||head.next==null){
+      return head;
     }
+    //前置位
+    ListNode beg = null;
+    ListNode mid = head;
+    //后位
+    ListNode end = head.next;
+    while (end!=null){
+      //改变位
+      mid.next = beg;
+      //向后移动所有指针
+      beg = mid;
+      mid = end;
+      end = end.next;
+    }
+    //处理最后一个节点
+    mid.next = beg;
+    return mid;
+  }
 }
 ```
 

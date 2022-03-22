@@ -9,16 +9,16 @@ package leetcode15;
  * @Date 2020年8月7日 上午10:24:21
  */
 public class TreeNode {
-	int val;
+	public int val;
 	// 左子树
-	TreeNode left;
+	public TreeNode left;
 	// 右子树
-	TreeNode right;
+	public TreeNode right;
 
-	TreeNode() {
+	public TreeNode() {
 	}
 
-	TreeNode(int val) {
+	public TreeNode(int val) {
 		this.val = val;
 	}
 

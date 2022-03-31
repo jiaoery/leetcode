@@ -5563,3 +5563,62 @@ cdata 不是 "<![CDATA[<div>]>]]>]]>" 的原因参照规则 7 。
 ```
 
 [点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode167)
+
+# Question168：无重叠区域
+
+#### [435. 无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/)
+
+给定一个区间的集合 `intervals` ，其中 `intervals[i] = [starti, endi]` 。返回 *需要移除区间的最小数量，使剩余区间互不重叠* 。
+
+**示例 1:**
+
+```text
+输入: intervals = [[1,2],[2,3],[3,4],[1,3]]
+输出: 1
+解释: 移除 [1,3] 后，剩下的区间没有重叠。
+```
+
+**示例 2:**
+
+```text
+输入: intervals = [ [1,2], [1,2], [1,2] ]
+输出: 2
+解释: 你需要移除两个 [1,2] 来使剩下的区间没有重叠。
+```
+
+**示例 3:**
+
+```text
+输入: intervals = [ [1,2], [2,3] ]
+输出: 0
+解释: 你不需要移除任何区间，因为它们已经是无重叠的了。
+```
+
+[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode168)
+
+# Question169：多数元素
+
+给定一个大小为 *n* 的数组，找到其中的多数元素。多数元素是指在数组中出现次数 **大于** `⌊ n/2 ⌋` 的元素。
+
+你可以假设数组是非空的，并且给定的数组总是存在多数元素。
+
+**示例 1：**
+
+```text
+输入：[3,2,3]
+输出：3
+```
+
+**示例 2：**
+
+```text
+输入：[2,2,1,1,1,2,2]
+输出：2
+```
+
+**进阶：**
+
+- 尝试设计时间复杂度为 O(n)、空间复杂度为 O(1) 的算法解决此问题。
+
+[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode169)
+

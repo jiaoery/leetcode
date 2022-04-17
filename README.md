@@ -5685,3 +5685,36 @@ cdata 不是 "<![CDATA[<div>]>]]>]]>" 的原因参照规则 7 。
 - `2 <= n <= 58`
 
 [点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode171)
+
+
+
+# Question172:验证回文字符串
+
+#### [680. 验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/)
+
+给定一个非空字符串 `s`，**最多**删除一个字符。判断是否能成为回文字符串。
+
+**示例 1:**
+
+```text
+输入: s = "aba"
+输出: true
+```
+
+**示例 2:**
+
+```text
+输入: s = "abca"
+输出: true
+解释: 你可以删除c字符。
+```
+
+**示例 3:**
+
+```text
+输入: s = "abc"
+输出: false
+```
+
+[点击查看答案](https://github.com/jiaoery/leetcode/tree/master/src/leetcode172)
+
